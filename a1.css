@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+    'a b c c'
+    ' a d d d';
+}
+.class1{
+    grid-area: a;
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    justify-content: space-evenly;
+    background-color: darkslategrey;
+    color: white;
+    padding-left: 30px;
+}
+button{
+    background-color: darkslategrey;
+    color: white;
+    padding: 20px 30px;
+    border: 1px white solid;
+    width: 70%;
+    margin:  0px 40px;
+}
+.class2{
+    grid-area: b;
+}
+.class3{
+    grid-area: c;
+    padding-left: 20px;
+    padding-top: 40px;
+    background-color: bisque;   
+}
+#id1{
+    padding-top: 30px;
+}
+
+.class4{
+    grid-area: d;
+}
+
+
